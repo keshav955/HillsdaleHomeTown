@@ -1,0 +1,180 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navigationBar-brand {
+    width: 60%;
+    margin-left: 40px;
+}
+
+.align-right {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.register-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    background-color: #9c1c31;
+    color: white !important;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 32px;
+    margin-right: 50px !important;
+    border-radius: 0px;
+}
+
+.carousel-item {
+    height: 38rem;
+    background: #777;
+    overflow: hidden;
+}
+
+.bg-image-double {
+    background-image: url("../img/hillsdale-bg.jpg");
+    background-color: #cccccc;
+    width: 100%;
+    height: 40rem;
+    background-repeat: repeat;
+    background-position: right;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.bg-image-single {
+    background-image: url("../img/Hillsdalee_bg2.jpeg");
+    background-color: #cccccc;
+    width: 50%;
+    height: 75rem;
+    background-repeat: repeat;
+    background-position: left;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.heading {
+    font-family: 'Noto Sans', sans-serif;
+    color: #388163;
+    font-weight:400;
+}
+
+.sub-heading {
+    font-family: 'Noto Sans', sans-serif;
+    color: #c95f3a;
+    font-weight: 300;
+}
+
+.sub-heading-yellow {
+    font-family: 'Noto Sans', sans-serif;
+    color: #e5c421;
+    font-weight: 300;
+}
+
+.bg-theme {
+    background-color: #388163;
+    color: white !important;
+}
+
+.image-cover {
+    object-fit:cover;
+}
+
+.image-top-left {
+    object-position: top left;
+}
+.image-right {
+    object-position: right;
+}
+.image-center {
+    object-position:center;
+}
+
+.hilltown-board-img{
+    width: 100%;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-basis-30 {
+    display: flex;
+    flex-basis: 30%;
+}
+
+.img-card{
+    width:100%;
+    height: 100vh;
+}
+
+.text-front {
+    z-index: 1;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-basis-50 {
+    display: flex;
+    flex-basis: 45%;
+}
+
+.foot{
+    position: relative;
+    bottom: 0px;
+    font-size:13px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 750px) {
+    .flex-basis-30 {
+        display: flex;
+        flex-basis: 80%;
+    }
+    .bg-image-double{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px ) {
+    .flex-basis-30 {
+        display: flex;
+        flex-basis: 100%;
+    }
+    .bg-image-double {
+        display: none;
+    }
+}
+@media only screen and (min-width: 751px) and (max-width: 1056px) {
+    .flex-basis-30 {
+        display: flex;
+        flex-basis: 45%;
+    }
+}
