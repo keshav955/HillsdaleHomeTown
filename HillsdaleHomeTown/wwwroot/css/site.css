@@ -70,6 +70,7 @@ body {
     overflow: hidden;
     position: absolute;
     opacity: 0.4;
+    z-index: -1;
 }
 
 .heading {
@@ -153,6 +154,43 @@ body {
     font-size:13px;
 }
 
+.register{
+    padding: 50px 0px 50px 0px;
+}
+
+.bg-resgister {
+    background-color: #347d5f;
+}
+
+.details-text {
+    text-align: left;
+    color: white !important;
+    line-height: 30px !important;
+    font-size: 18px;
+}
+
+.content-align{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.image-width{
+    width: 60%;
+}
+
+.image-width2 {
+    width: 70%;
+}
+
+
+
 @media only screen and (min-width: 500px) and (max-width: 750px) {
     .flex-basis-30 {
         display: flex;
@@ -160,6 +198,38 @@ body {
     }
     .bg-image-double{
         display: none;
+    }
+    .carousel-item {
+        height: 24rem;
+    }
+    .img-card{
+        height: 70vh;
+    }
+    .image-width {
+        width: 40%;
+    }
+
+    .image-width2 {
+        width: 70%;
+    }
+    .details-text {
+        line-height: 28px !important;
+        font-size: 15px;
+        text-align: center;
+    }
+    .heading {
+        font-size: 28px;
+    }
+
+    .lead {
+        font-size: 18px;
+    }
+    .register-btn {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 20px;
     }
 }
 
@@ -171,10 +241,60 @@ body {
     .bg-image-double {
         display: none;
     }
+    .carousel-item {
+        height: 18rem;
+    }
+    .img-card {
+        height: 50vh;
+    }
+    .image-width {
+        width: 40%;
+    }
+    .details-text {
+        line-height: 27px !important;
+        text-align: center;
+        font-size: 14px;
+    }
+    .heading .featurette-heading {
+        font-size: 24px;
+    }
+    .lead{
+        font-size: 15px;
+    }
 }
-@media only screen and (min-width: 751px) and (max-width: 1056px) {
+@media only screen and (min-width: 750px) and (max-width: 1056px) {
     .flex-basis-30 {
         display: flex;
         flex-basis: 45%;
+    }
+    .carousel-item {
+        height: 32rem;
+    }
+
+    .img-card {
+        height: 85vh;
+    }
+    .image-width {
+        width: 45%;
+    }
+    .image-width2 {
+        width: 70%;
+    }
+    .details-text {
+        font-size: 17px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+
+    .lead {
+        font-size: 19px;
+    }
+    .register-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 24px;
     }
 }

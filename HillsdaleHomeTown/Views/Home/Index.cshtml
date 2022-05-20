@@ -88,7 +88,7 @@
     </div>
 </div>
 <div>
-    <img src="~/img/img-14.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto image-cover image-top-left img-card"  />          
+    <img src="~/img/img-14.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto image-cover image-center img-card"  />          
 </div>
 <div class="container-fluid">
     <div class="bg-image-double "></div>
@@ -141,39 +141,84 @@
     </div>
 
 </div>
+<section id="register">
+<div class="container-fluid register text-center bg-resgister">
+    <div class="row left-align">
+        <div class="col-lg-6 col-md-12 col-sm-12 row ">
+            <div class="col-1"></div>
+            <div class="col-10 bg-white p-5" style="border-radius: 20px;">
+                 <form method="get" asp-action="Index" asp-controller="Home" id="regiter">
+                     <h2 class="heading text-center">Register For <span class="sub-heading"><strong>Inquiry</strong></span></h2>
+                      <div class="form-group mt-4">
+                        <label class="mb-2" for="Firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="jack">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label class="mb-2" for="Lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="sparrow">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label class="mb-2" for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="jack@example.com">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label class="mb-2" for="phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(431) 8854-697">
+                      </div>
+                      <div class="form-group mt-3">
+                        <label class="mb-2" for="phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(431) 8854-697">
+                      </div>
+                      <div class="form-group mt-3 mb-3">
+                        <label class="mb-2" for="broker">Are you a Broker</label>
+                        <select class="form-control" id="broker">
+                          <option>Yes</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+                      <div class="form-group mt-2">
+                          <span class="text-black text-lowercase">BY CHECKING THE BOX, YOU AGREE TO RECEIVE COMMUNICATIONS FROM HOMETOWN HILLSDALE*</span>
+                        <div>
+                            <label>
+                                <input type="checkbox" name="agree" value="I AGREE">I AGREE
+                                </label>
+                        </div>
+                      </div>
+                      <button class="btn bg-theme mt-3" type="submit">Send</button>
 
-
-@*
-   <div class="container">
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
+                 </form>
+            </div>
+           <div class="col-1"></div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 content-align" >
+            <div class="text-center">      
+                <img class="image-width mt-5" src="~/img/hometown-hillsdale-white.png">
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="details-text col-8 mt-5" style="padding-left: 30px;">
+                <p>
+                    <span><strong>Presentation Gallery:<br></strong>1155 North Service Rd. W., Unit 6, Oakville</span>
+                </p>
+                <p><span>Monday – Thursday: 12pm – 7pm</span><br>
+                    <span>Friday Closed</span><br>
+                    <span>Weekends &amp; Holidays: 12pm – 6pm</span>
+                </p>
+                <p><span>Tel: 431-469-1008</span><br>
+                    <span>Fax 431-469-1048</span>
+                </p>
+                <p><span>Email:&nbsp;
+                    <a class="details-text" href="mailto:hometownhillsdale@gmail.com">hometownhillsdale@gmail.com</a>
+                    </span>
+                </p>
+                
+                <div class="col-2"></div>
+             </div>
+            </div>
+        </div>
     </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-   </div>*@
+</div>
+</section>
 <script type="text/javascript">
     $('.carousel').carousel({
   interval: 2000
